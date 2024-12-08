@@ -143,9 +143,9 @@ jobs:
 <br>
 <br>
 
-`Released date:- 2024.12.07`
+`Released date:- 2024.12.08`
 <br>
-`Latest updated date:- 2024.12.07`
+`Latest updated date:- 2024.12.08`
 
 <br>
 
