@@ -1,0 +1,39 @@
+name: Node.js CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.x]
+
+    env:
+      SESSION_ID: DIMENSION-X~OMNDzI6S#UptQt99Uj-gbC5LcAdr5cUT89OYeTWguwxt-7AyPUUA
+      MONGODB_URI: mongodb+srv://Sanijabro:0767858145@cluster0.earej.mongodb.net/
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Start application
+      run: npm start
