@@ -1,0 +1,43 @@
+{
+    "name": "DIMENSION-X",
+    "version": "1.0.0",
+    "scripts": {
+      "start": "pm2 start start.js --deep-monitoring --attach --name DIMENSION-X",
+      "stop": "pm2 stop DIMENSION-X",
+      "restart": "pm2 restart DIMENSION-X"
+    },
+    "dependencies": {
+        "@adiwajshing/keyed-db": "^0.2.4",
+        "seedr": "^1.1.2",
+        "@whiskeysockets/baileys": "^6.7.6",
+        "mongodb": "^6.5.0",
+        "mongoose": "8.6.1",
+        "crypto-js": "latest",
+        "api-dylux": "latest",
+        "axios": "^1.2.5",
+        "caliph-api": "^1.0.0",
+        "cheerio": "^1.0.0-rc.12",
+        "child_process": "^1.0.2",
+        "express": "latest",
+        "file_size_url": "^1.0.4",
+        "file-type": "^16.5.3",
+        "fluent-ffmpeg": "^2.1.2",
+        "fs-extra": "^11.1.0",
+        "heroku-client": "^3.1.0",
+        "megajs": "^1.3.0",
+        "mumaker": "^2.0.0",
+        "node-cache": "^5.1.2",
+        "node-fetch": "^2.6.1",
+        "os": "^0.1.2",
+        "path": "^0.12.7",
+        "pino": "^7.0.5",
+        "pm2": "^5.2.0",
+        "postgres_dbm": "^1.1.0",
+        "pretty-ms": "^8.0.0",
+        "qrcode-terminal": "^0.12.0",
+        "systeminformation": "^5.21.11",
+        "util": "^0.12.4",
+        "vm": "^0.1.0",
+        "link-preview-js": "^3.0.4"
+    }
+  }
